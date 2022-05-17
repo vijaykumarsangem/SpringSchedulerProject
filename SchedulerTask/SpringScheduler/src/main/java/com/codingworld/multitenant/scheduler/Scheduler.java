@@ -15,7 +15,7 @@ public class Scheduler {
 	@Autowired
 	EmployeeFeign empFeign;
 
-	@Scheduled(fixedDelay = 6000)
+	@Scheduled(fixedDelay = 600000)
 	public void transferData() {
 
 		List<Employee> empList = empFeign.getAll("tenant1");
